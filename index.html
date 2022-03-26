@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonte Roboto, do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <title>Instagram</title>
+
+    <!-- Cansei da bagunça de infinitas classes no arquivo .css, -->
+    <!-- dessa vez resolvi organizar tudo em arquivos específicos -->
+    <!-- e se não for boas práticas agora é, kkkkkk -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/barra-do-topo.css">
+    <link rel="stylesheet" href="css/stories.css">
+    <link rel="stylesheet" href="css/postagens.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+</head>
+
+<body>
+
+    <!-- Barra do topo -->
+    <div class="barra-topo">
+        <div>
+            <div class="logo">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <img src="images/logo.png"/>
+            </div>
+
+            <div class="logo-mobile">
+                <img src="images/logo.png"/>
+            </div>
+            
+            <input class="barra-de-pesquisa" placeholder="Pesquisar">
+
+            <div class="menu">
+                <div class="nao-mobile">
+                    <ion-icon name="paper-plane-outline"></ion-icon>
+                    <ion-icon name="compass-outline"></ion-icon>
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <ion-icon name="person-outline"></ion-icon>
+                </div>
+                <div class="mobile">
+                    <ion-icon name="paper-plane-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Barra do topo -->
+
+    <!-- Div que contém os stories e as postagens -->
+    <div class="conteudo">
+
+        <!-- Caixa de stories -->
+        <div class="stories-container">
+
+            <!-- Botão de scroll -->
+            <div class="botao-scroll">
+                <ion-icon name="chevron-forward-circle"></ion-icon>
+            </div>
+
+            <!-- Stories -->
+            <div class="story">
+                <div class="icone">
+                    <img src="images/stories_background.jpg" />
+                    <img src="images/9gag.png" />
+                </div>
+                <h1>9gag</h1>
+            </div>
+
+            <div class="story">
+                <div class="icone">
+                    <img src="images/stories_background.jpg" />
+                    <img src="images/meowed.png" />
+                </div>
+                <h1>meowed</h1>
+            </div>
+
+            <div class="story">
+                <div class="icone">
+                    <img src="images/stories_background.jpg" />
+                    <img src="images/barked.png" />
+                </div>
+                <h1>barked</h1>
+            </div>
+
+            <div class="story">
+                <div class="icone">
+                    <img src="images/stories_background.jpg" />
+                    <img src="images/nathanwpylestrangeplanet.png" />
+                </div>
+                <h1>nathanpyle...</h1>
+            </div>
+
+            <div class="story">
+                <div class="icone">
+                    <img src="images/stories_background.jpg" />
+                    <img src="images/wawawiwacomicsa.png" />
+                </div>
+                <h1>wawawiwac...</h1>
+            </div>
+
+            <div class="story">
+                <div class="icone">
+                    <img src="images/stories_background.jpg" />
+                    <img src="images/respondeai.png" />
+                </div>
+                <h1>respondeai</h1>
+            </div>
+
+            <div class="story">
+                <div class="icone">
+                    <img src="images/stories_background.jpg" />
+                    <img src="images/filomoderna.png" />
+                </div>
+                <h1>filomoderna</h1>
+            </div>
+
+            <div class="story">
+                <div class="icone">
+                    <img src="images/stories_background.jpg" />
+                    <img src="images/memeriagourmet.png" />
+                </div>
+                <h1>memeariago...</h1>
+            </div>
+        </div>
+        <!-- Caixa de stories -->
+
+        <!-- Postagens -->
+        <div class="postagens">
+
+            <!-- Postagem 1 com video! -->
+            <div class="post">
+                <div class="post-topo">
+                    <div class="nome-da-conta">
+                        <img src="images/adorableanimals.png" />
+                        <h1>adorable_animals</h1>
+                    </div>
+                    <div class="icone-mais">
+                        <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </div>
+                </div>
+
+                <video controls autoplay muted>
+                    <source src="videos/video.mp4" type="video/mp4">
+                    <source src="videos/video.ogv" type="video/ogv">
+                    Seu browser não suporta vídeos.
+                </video>
+
+                <div class="post-baixo">
+                    <div>
+                        <div>
+                            <ion-icon name="heart-outline"></ion-icon>
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                            <ion-icon name="paper-plane-outline"></ion-icon>
+                        </div>
+                        <div>
+                            <ion-icon name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="images/respondeai2.png" />
+                        <p>Curtido por <strong>respondeai</strong> e <strong>outras 69.420 pessoas</strong></p>
+                    </div>
+                </div>
+
+                <!-- Comentários -->
+                <div class="comentarios-container">
+                    <div class="comentarios-borda-topo"></div>
+                    
+                    <div class="comentario">
+                        <div class="comentario-container">
+                            <img src="images/smallcutecats.png" />
+                            <div>
+                                <p>
+                                    <strong>smallcutecats</strong> esse pelúcia tá se mexendo 👀
+                                </p>
+                                <div>
+                                    <p>36m</p>
+                                    <p>512 curtidas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="botao-de-curtir">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="comentario">
+                        <div class="comentario-container">
+                            <img src="images/badvibesmemes.png" />
+                            <div>
+                                <p>
+                                    <strong>bad.vibes.memes</strong> just chillin
+                                </p>
+                                <div>
+                                    <p>11m</p>
+                                    <p>99 curtidas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="botao-de-curtir">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="comentarios-borda-topo"></div>
+
+                    <div class="adicionar-comentario">
+                        <input placeholder="Adicionar um comentário...">
+                        <div class="botao-de-enviar">
+                            <ion-icon name="send-outline"></ion-icon>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- Comentários -->
+            
+            </div>
+            <!-- Postagem 1 com video! -->
+
+            <!-- Postagem 2 -->
+            <div class="post">
+                <div class="post-topo">
+                    <div class="nome-da-conta">
+                        <img src="images/meowed2.png" />
+                        <h1>meowed</h1>
+                    </div>
+                    <div class="icone-mais">
+                        <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </div>
+                </div>
+
+                <img src="images/gato-telefone.png" />
+
+                <div class="post-baixo">
+                    <div>
+                        <div>
+                            <ion-icon name="heart-outline"></ion-icon>
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                            <ion-icon name="paper-plane-outline"></ion-icon>
+                        </div>
+                        <div>
+                            <ion-icon name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="images/respondeai2.png" />
+                        <p>Curtido por <strong>respondeai</strong> e <strong>outras 101.523 pessoas</strong></p>
+                    </div>
+                </div>
+
+                <!-- Comentários -->
+                <div class="comentarios-container">
+                    <div class="comentarios-borda-topo"></div>
+                    
+                    <div class="comentario">
+                        <div class="comentario-container">
+                            <img src="images/smallcutecats.png" />
+                            <div>
+                                <p>
+                                    <strong>smallcutecats</strong> eu deitado tentando dormir de noite
+                                </p>
+                                <div>
+                                    <p>1h</p>
+                                    <p>436 curtidas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="botao-de-curtir">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="comentario">
+                        <div class="comentario-container">
+                            <img src="images/adorableanimals.png" />
+                            <div>
+                                <p>
+                                    <strong>adorable_animals</strong> se fazendo de dificil pro crush
+                                </p>
+                                <div>
+                                    <p>44m</p>
+                                    <p>238 curtidas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="botao-de-curtir">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="comentarios-borda-topo"></div>
+
+                    <div class="adicionar-comentario">
+                        <input placeholder="Adicionar um comentário...">
+                        <div class="botao-de-enviar">
+                            <ion-icon name="send-outline"></ion-icon>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- Comentários -->
+
+            </div>
+            <!-- Postagem 2 -->
+
+            <!-- Postagem 3 -->
+            <div class="post">
+                <div class="post-topo">
+                    <div class="nome-da-conta">
+                        <img src="images/barked2.png" />
+                        <h1>barked</h1>
+                    </div>
+                    <div class="icone-mais">
+                        <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </div>
+                </div>
+
+                <img src="images/dog.png" />
+
+                <div class="post-baixo">
+                    <div>
+                        <div>
+                            <ion-icon name="heart-outline"></ion-icon>
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                            <ion-icon name="paper-plane-outline"></ion-icon>
+                        </div>
+                        <div>
+                            <ion-icon name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="images/adorableanimals2.png" />
+                        <p>Curtido por <strong>adorable_animals</strong> e <strong>outras 99.159 pessoas</strong></p>
+                    </div>
+                </div>
+
+                <!-- Comentários -->
+                <div class="comentarios-container">
+                    <div class="comentarios-borda-topo"></div>
+                    
+                    <div class="comentario">
+                        <div class="comentario-container">
+                            <img src="images/smallcutecats.png" />
+                            <div>
+                                <p>
+                                    <strong>smallcutecats</strong> boop!
+                                </p>
+                                <div>
+                                    <p>24m</p>
+                                    <p>180 curtidas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="botao-de-curtir">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="comentario">
+                        <div class="comentario-container">
+                            <img src="images/adorableanimals.png" />
+                            <div>
+                                <p>
+                                    <strong>adorable_animals</strong> 🥰🥰🥰
+                                </p>
+                                <div>
+                                    <p>19m</p>
+                                    <p>238 curtidas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="botao-de-curtir">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="comentarios-borda-topo"></div>
+
+                    <div class="adicionar-comentario">
+                        <input placeholder="Adicionar um comentário...">
+                        <div class="botao-de-enviar">
+                            <ion-icon name="send-outline"></ion-icon>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- Comentários -->
+
+            </div>
+            <!-- Postagem 3 -->
+
+        </div>
+        <!-- Postagens -->
+
+    </div>
+    <!-- Div que contém os stories e as postagens -->
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-fixa">
+            <div class="sidebar-topo">
+                <img src="images/catanacomics.png" />
+                <div class="nome">
+                    <h1>catanacomics</h1>
+                    <h2>Catana</h2>
+                </div>
+            </div>
+
+            <div class="sugestoes-topo">
+                <div>Sugestões para você</div>
+                <div>Ver tudo</div>
+            </div>
+
+            <!-- Sugestões -->
+            <div class="sugestao">
+                <div class="sugestao-conta">
+                    <img src="images/badvibesmemes.png" />
+                    <div class="sugestao-nome">
+                        <h1>bad.vibes.memes</h1>
+                        <h2>Segue você</h2>
+                    </div>
+                </div>
+                <div class="botao-de-seguir">
+                    Seguir
+                </div>
+            </div>
+
+            <div class="sugestao">
+                <div class="sugestao-conta">
+                    <img src="images/chibirdart.png" />
+                    <div class="sugestao-nome">
+                        <h1>chibirdart</h1>
+                        <h2>Segue você</h2>
+                    </div>
+                </div>
+                <div class="botao-de-seguir">
+                    Seguir
+                </div>
+            </div>
+
+            <div class="sugestao">
+                <div class="sugestao-conta">
+                    <img src="images/razoesparaacreditar.png" />
+                    <div class="sugestao-nome">
+                        <h1>razoespraacreditar</h1>
+                        <h2>Novo no Instagram</h2>
+                    </div>
+                </div>
+                <div class="botao-de-seguir">
+                    Seguir
+                </div>
+            </div>
+
+            <div class="sugestao">
+                <div class="sugestao-conta">
+                    <img src="images/adorableanimals.png" />
+                    <div class="sugestao-nome">
+                        <h1>adorable_animals</h1>
+                        <h2>Segue você</h2>
+                    </div>
+                </div>
+                <div class="botao-de-seguir">
+                    Seguir
+                </div>
+            </div>
+
+            <div class="sugestao">
+                <div class="sugestao-conta">
+                    <img src="images/smallcutecats.png" />
+                    <div class="sugestao-nome">
+                        <h1>smallcutecats</h1>
+                        <h2>Segue você</h2>
+                    </div>
+                </div>
+                <div class="botao-de-seguir">
+                    Seguir
+                </div>
+            </div>
+            <!-- Sugestões -->
+
+            <div class="botoes-finais">
+                Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
+            </div>
+
+            <div class="copyright">
+                © 2021 INSTAGRAM DO FACEBOOK
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
